@@ -1,6 +1,6 @@
-var coolMath = require("./my-module");
-
-console.log(coolMath);
-console.log(coolMath.PHI);
-
-coolMath.explain();
+module.exports = {
+  PHI: 1.618,
+  explain: function() {
+    console.log("(X+Y) is to X as X is to Y: (X+Y)≈" + this.PHI);
+  }
+};
